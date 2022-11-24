@@ -63,7 +63,7 @@ const Login: React.FunctionComponent = () => {
       <button className={classes.log} type="submit">
         Log in
       </button>
-      <a href="/" className={classes.forget}>
+      <a href="https://www.facebook.com/help" className={classes.forget}>
         Forget password?
       </a>
       <hr className={classes.line} />
