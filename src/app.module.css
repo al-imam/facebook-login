@@ -1,4 +1,19 @@
+:root {
+  --bg-color: #f1f2f6;
+  --logo-color: #1777f2;
+  --ds-color: #1d1e22;
+  --btn-bg-color: #1878f3;
+  --ph-color: #8f9092;
+  --bold-tx-color: #202125;
+  --input-tx-color: #1d212a;
+  --border-fa-color: #1a74e2;
+  --border-color: #dedfe3;
+  --outline-color: rgba(26, 116, 226, 0.1);
+  --nbtn-bg-color: #42b72a;
+  --outline-green: rgba(66, 183, 42, 0.2);
+}
+
 .body {
-  background-color:  #f2f4f7;
+  background-color: var(--bg-color);
   width: 100%;
 }
