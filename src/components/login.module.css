@@ -1,15 +1,15 @@
 .form {
-  width: 22rem;
-  display: block;
+  width: 20rem;
+  display: inline-block;
   background-color: white;
   border-radius: 0.5rem;
-  box-shadow: 0 0.25rem 0.7rem var(--gray-4), 0.25rem 0 0.7rem var(--gray-4);
-  margin: 0 auto;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 10px 20px, rgba(0, 0, 0, 0.1) 0px 6px 6px;
   padding: 1rem;
+  vertical-align: middle;
   --gap-bottom: 0.75rem;
 }
 
-.input {
+.inputs {
   color: var(--input-tx-color);
   caret-color: var(--border-fa-color);
   background-color: white;
@@ -21,20 +21,20 @@
   margin-bottom: var(--gap-bottom);
 }
 
-.input:focus,
-.input:active {
+.inputs:focus,
+.inputs:active {
   border: 1px solid var(--border-fa-color);
   outline: 3px solid var(--outline-color);
 }
 
-.input::placeholder {
-  color: var(--ph-color);
+.inputs::placeholder {
+  color: var(--placeholder-color);
 }
 
 .log {
   display: block;
   width: 100%;
-  background-color: var(--btn-bg-color);
+  background-color: var(--pb-bg-color);
   font-size: 1rem;
   font-family: var(--ff-sans-serif);
   font-weight: bold;
@@ -59,13 +59,13 @@
   text-align: center;
   font-size: 0.8rem;
   font-family: var(--ff-sans-serif);
-  color: var(--btn-bg-color);
+  color: var(--pb-bg-color);
   font-weight: 500;
   margin-bottom: var(--gap-bottom);
 }
 
 .forget:hover {
-  text-decoration: underline var(--btn-bg-color);
+  text-decoration: underline var(--pb-bg-color);
 }
 
 .line {
@@ -84,7 +84,7 @@
   display: block;
   margin-inline: auto;
   padding: 0.5rem;
-  background-color: var(--nbtn-bg-color);
+  background-color: var(--b-bg-color);
   border: none;
   border-radius: 0.25rem;
   color: white;

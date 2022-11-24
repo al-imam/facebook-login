@@ -18,7 +18,7 @@ interface Action {
 
 type RF = (state: State, action: Action) => State;
 
-const reduce: RF = (state, action)=> {
+const reduce: RF = (state, action) => {
   const { type, payload } = action;
   switch (type) {
     case "password":
@@ -41,7 +41,7 @@ const Login: React.FunctionComponent = () => {
   return (
     <form className={classes.form}>
       <input
-        className={classes.input}
+        className={classes.inputs}
         type="text"
         onChange={(evt) =>
           dispatch({ type: "username", payload: evt.target.value })
@@ -51,7 +51,7 @@ const Login: React.FunctionComponent = () => {
         required
       />
       <input
-        className={classes.input}
+        className={classes.inputs}
         type="password"
         onChange={(evt) =>
           dispatch({ type: "password", payload: evt.target.value })
@@ -63,9 +63,13 @@ const Login: React.FunctionComponent = () => {
       <button className={classes.log} type="submit">
         Log in
       </button>
-      <a href="#" className={classes.forget}>Forget password?</a>
-      <hr className={classes.line}/>
-      <button className={classes.newAccount} type="button">Create New Account</button>
+      <a href="/" className={classes.forget}>
+        Forget password?
+      </a>
+      <hr className={classes.line} />
+      <button className={classes.newAccount} type="button">
+        Create New Account
+      </button>
     </form>
   );
 };
