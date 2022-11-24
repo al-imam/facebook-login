@@ -1,12 +1,12 @@
-import classes from "./app.module.css";
-import Login from "./components/Login";
 import React from "react";
+import Login from "./components/Login";
+import Brand from "./components/Brand";
+import classes from "./app.module.css";
 
 const App: React.FunctionComponent = () => {
   return (
     <div className={classes.body}>
-     <h1>Facebook</h1>
-     <span>Facebook helps you connect and share with the people in your life.</span>
+      <Brand />
       <Login />
     </div>
   );
